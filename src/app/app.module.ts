@@ -13,10 +13,18 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 // angular material
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatIconModule} from "@angular/material/icon";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatMenuModule} from "@angular/material/menu";
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
+import {MatButtonModule} from "@angular/material/button";
+import { LoginComponent } from './components/login/login.component';
+import { SupportComponent } from './components/support/support.component';
 
 const routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'support', component: SupportComponent},
   {path: 'user', component: UserDashboardComponent},
   {path: 'admin', component: AdminDashboardComponent},
   {path: '**', component: PageNotFoundComponent},
@@ -30,7 +38,10 @@ const routes = [
     AdminDashboardComponent,
     UserDashboardComponent,
     MainNavBarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MenuButtonComponent,
+    LoginComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,10 @@ const routes = [
     MatSlideToggleModule,
     RouterModule,
     RouterModule.forRoot(routes),
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

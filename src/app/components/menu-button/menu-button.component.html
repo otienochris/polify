@@ -1,0 +1,25 @@
+<button class="btn" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon class="icon">more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu" class="menu-btn" yPosition="above" xPosition="after">
+  <a [routerLink]="''" class="link">
+    <button mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+  </a>
+  <a [routerLink]="'support'" class="link">
+    <button mat-menu-item>
+      <mat-icon>contact_support</mat-icon>
+      <span>support</span>
+    </button>
+  </a>
+
+  <a [routerLink]="'about'" class="link">
+    <button mat-menu-item>
+      <mat-icon>info</mat-icon>
+      <span>About</span>
+    </button>
+  </a>
+
+</mat-menu>

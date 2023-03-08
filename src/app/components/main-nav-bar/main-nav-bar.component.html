@@ -1,1 +1,13 @@
-<p>main-nav-bar works!</p>
+<mat-toolbar class="tool-bar">
+  <!--  <app-menu-button ></app-menu-button>-->
+  <a [routerLink]="'/'">
+    <span class="app-name">Polify</span>
+  </a>
+  <span class="spacer"></span>
+  <button mat-icon-button class="btn" [routerLink]="'login'">
+    <mat-icon class="icon">person_outline</mat-icon>
+  </button>
+  <button mat-icon-button class="btn" [routerLink]="'support'">
+    <mat-icon class="icon">contact_support</mat-icon>
+  </button>
+</mat-toolbar>

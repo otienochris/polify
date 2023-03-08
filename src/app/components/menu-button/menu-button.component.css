@@ -1,0 +1,30 @@
+.btn {
+  margin: 10px;
+  padding: 3px 2px;
+  background-color: black;
+  border: 0px solid white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: darkorange;
+}
+
+.icon {
+  background-color: black;
+  color: white;
+}
+
+.icon:hover {
+  color: darkorange;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-menu {
+  /*margin-top: 60px;*/
+  /*position: fixed;*/
+}

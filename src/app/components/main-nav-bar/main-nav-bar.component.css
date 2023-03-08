@@ -1,0 +1,42 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.tool-bar {
+  background-color: black;
+  padding: 10px;
+  position: relative;
+}
+
+.btn {
+  margin: 10px;
+  padding: 3px 2px;
+  background-color: black;
+  border: 0px solid white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: darkorange;
+  border-bottom: 1px solid darkorange;
+}
+
+.icon {
+  background-color: black;
+  color: white;
+
+}
+
+
+.app-name {
+  color: white;
+  margin: auto 10px;
+  font-family: Monospaced;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.link {
+  text-decoration: none;
+}
+
