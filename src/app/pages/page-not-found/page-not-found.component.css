@@ -1,0 +1,45 @@
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: bisque;*/
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  background-color: lightgray;
+}
+
+.main-message {
+  font-weight: bolder;
+  font-size: 2rem;
+  max-width: 600px;
+  font-family: Monospaced;
+}
+
+.error-code {
+  font-weight: normal;
+  max-width: 600px;
+  font-family: Monospaced;
+}
+
+.error-icon {
+  font-size: 5rem;
+  height: 100px;
+  width: 100px;
+  color: maroon;
+}
+
+.btn {
+  padding: 5px;
+  font-weight: bolder;
+  font-family: Monospaced;
+  font-size: 2em;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin: 3px 5px;
+}
