@@ -19,6 +19,8 @@ import { MenuButtonComponent } from './components/menu-button/menu-button.compon
 import {MatButtonModule} from "@angular/material/button";
 import { LoginComponent } from './components/login/login.component';
 import { SupportComponent } from './components/support/support.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes = [
   {path: '', component: HomeComponent},
@@ -41,7 +43,8 @@ const routes = [
     PageNotFoundComponent,
     MenuButtonComponent,
     LoginComponent,
-    SupportComponent
+    SupportComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ const routes = [
     MatIconModule,
     MatToolbarModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
