@@ -1,0 +1,92 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*min-height: 600px;*/
+  margin: auto;
+}
+
+.title {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-family: monospace;
+  padding-left: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.error-container {
+  max-width: 400px;
+  border: 1px solid red;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.form-field-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 5px auto;
+}
+
+.input {
+  /*margin: 5px auto;*/
+}
+
+.btn {
+  max-width: 400px;
+}
+
+.btn-submit {
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid darkorange;
+  background-color: darkorange;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  color: white;
+}
+
+.btn-change-password {
+  background-color: white;
+}
+
+.btn-signup {
+
+}
+.btn-group {
+  border-top: 1px dashed black;
+  padding-top: 15px;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider {
+  max-width: 300px;
+  border: 1px dashed darkorange;
+  margin: 20px auto
+}

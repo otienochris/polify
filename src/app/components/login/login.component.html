@@ -1,1 +1,28 @@
-<p>login works!</p>
+<section class="container main-container">
+  <h1 class="title">Login</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+    <div class="error-message" *ngIf="loginForm.get('username')?.errors && loginForm.get('username')?.touched">
+      <span>{{loginForm.get('username')?.errors?.['required'] && 'Username is required'}}</span>
+    </div>
+    <mat-form-field appearance="outline" class="txt-min-width form-field-container">
+      <mat-label>username</mat-label>
+      <input matInput [type]="'text'" formControlName="username" class="input"/>
+    </mat-form-field>
+
+    <div class="error-message" *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched">
+      <span>{{loginForm.get('password')?.errors?.['required'] && 'Password is required'}}</span>
+    </div>
+    <mat-form-field appearance="outline" class="txt-min-width form-field-container">
+      <mat-label>Password</mat-label>
+      <input matInput [type]="'password'" formControlName="password"/>
+    </mat-form-field>
+
+    <button mat-button type="submit" class="btn btn-submit"> Submit</button>
+    <div class="btn-group">
+      <button mat-raised-button type="button" class="btn btn-change-password">Change Password</button>
+
+      <button mat-raised-button type="button" class="btn btn-signup">Sign up</button>
+    </div>
+
+  </form>
+</section>
